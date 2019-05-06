@@ -34,10 +34,10 @@ const match = (pattern, name) => {
 }
 
 const pruneDebounce = (vm, filter) => {
-  const { debounceMap, originMap, _vnode } = vm
+  const { debounceMap, originMap, __vnode } = vm
   Object.keys(debounceMap).filter(!filter).forEach((each) => {
       Reflect.deleteProperty(debounceMap, each)
-      Reflect.set(_vnode.data.on, each, originMap[each])
+      Reflect.set(__vnode.data.on, each, originMap[each])
   })
 }
 
@@ -54,23 +54,25 @@ export default {
     this.originMap = new Map
     this.debounceMap = new Map
     this.default = new Set
-    this._vnode = null
+    this.__vnode = null
   },
   mounted () {
-    this.$watch(include, val => { // 监听include参数变化，实时更新防抖函数
+    this.$watch('include', val => { // 监听include参数变化，实时更新防抖函数
         pruneDebounce(this, name => matchs(val, name))
     })
-    this.$watch(exclude, val => {
+    this.$watch('exclude', val => {
         pruneDebounce(this, name => !matchs(val, name))
     })
 },
   destroyed () {
+    this.originMap = new Map
     this.debounceMap = new Map
     this.default = new Set
+    this.__vnode = null
   },
   render () {
     const vnode = this.$slots.default[0] || Object.create(null)
-    this._vnode = vnode
+    this.__vnode = vnode
     if(vnode.tag === 'input') {
       this.default.add('input')
     } else if(vnode.tag === 'button') {
@@ -85,7 +87,7 @@ export default {
         || (exclude && !match(exclude, each))
         || (!match(exclude, each) && this.default.has(each))
       ) {
-        this.originMap.set(each) = vnode.data.on[data]
+        this.originMap.set(each, vnode.data.on[each])
         this.debounceMap.set(each, debounce.call(vnode, vnode.data.on[each], timer, this.before))
         vnode.data.on[each] = this.debounceMap.get(each)
       }

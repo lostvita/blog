@@ -33,10 +33,10 @@ const match = (pattern, name) => {
 }
 
 const pruneThrottle = (vm, filter) => {
-    const { throttleMap, originMap, _vnode } = vm
+    const { throttleMap, originMap, __vnode } = vm
     Object.keys(throttleMap).filter(!filter).forEach((each) => {
         Reflect.deleteProperty(throttleMap, each)
-        Reflect.set(_vnode.data.on, each, originMap[each])
+        Reflect.set(__vnode.data.on, each, originMap[each])
     })
 }
 
@@ -53,13 +53,13 @@ export default {
         this.originMap = new Map // 缓存原始函数
         this.throttleMap = new Map // 缓存节流函数
         this.default = new Set // 缓存默认节流的事件类型
-        this._vnode = null // 节流组件包裹的组件实例
+        this.__vnode = null // 节流组件包裹的组件实例
     },
     mounted () {
-        this.$watch(include, val => { // 监听include参数变化，实时更新节流函数
+        this.$watch('include', val => { // 监听include参数变化，实时更新节流函数
             pruneThrottle(this, name => matchs(val, name))
         })
-        this.$watch(exclude, val => {
+        this.$watch('exclude', val => {
             pruneThrottle(this, name => !matchs(val, name))
         })
     },
@@ -67,11 +67,12 @@ export default {
         this.originMap = new Map
         this.throttleMap = new Map
         this.default = new Set
-        this._vnode = null
+        this.__vnode = null
     },
     render () {
+        console.log(this.$slots.default)
         const vnode = this.$slots.default[0] || Object.create(null)
-        this._vnode = vnode
+        this.__vnode = vnode
         // 针对不同的元素类型设置默认节流事件
         if(vnode.tag === 'input') {
             this.default.add('input')
@@ -87,7 +88,7 @@ export default {
                 || (exclude && !match(exclude, each))
                 || (!match(exclude, each) && this.default.has(each))
             ) {
-                this.originMap.set(each) = vnode.data.on[data] // 缓存原始事件函数
+                this.originMap.set(each, vnode.data.on[each]) // 缓存原始事件函数
                 this.throttleMap.set(each, throttle.call(vnode, vnode.data.on[each], timer, this.before)) // 缓存节流事件函数
                 vnode.data.on[each] = this.throttleMap.get(each) // 重新赋值组件实例的事件函数
             }
