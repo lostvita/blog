@@ -7,6 +7,7 @@
 - [用LocalStorage实现一个LFU存储系统](https://github.com/qiudongwei/blog/issues/3)
 
 ## 翻译
-- [透过Python反补ES6](https://github.com/qiudongwei/blog/issues/10)
+- [来，用SVG&CSS画一朵真实的云](https://github.com/qiudongwei/blog/issues/12)
+- [透过Python反补ES6](https://github.com/qiudongwei/blog/issues/11)
 - [JavaScript函数式编程](https://github.com/qiudongwei/blog/issues/9)
 - [精通JavaScript面试：什么是函数式编程](https://github.com/qiudongwei/blog/issues/8)
