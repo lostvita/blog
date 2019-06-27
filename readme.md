@@ -8,6 +8,7 @@
 - [用LocalStorage实现一个LFU存储系统](https://github.com/qiudongwei/blog/issues/3)
 
 ## 翻译
+- [CSS优秀起来真没JS什么事](https://github.com/qiudongwei/blog/issues/13)
 - [来，用SVG&CSS画一朵真实的云](https://github.com/qiudongwei/blog/issues/12)
 - [透过Python反补ES6](https://github.com/qiudongwei/blog/issues/11)
 - [JavaScript函数式编程](https://github.com/qiudongwei/blog/issues/9)
