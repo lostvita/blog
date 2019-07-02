@@ -1,6 +1,6 @@
 # 博客
 
-> “扬枹兮拊鼓，疏缓节兮安歌。”，我是安歌。
+> “扬枹兮拊鼓，疏缓节兮安歌。”，我是[安歌](https://juejin.im/user/5a96817df265da4e9c635c39/posts)。
 
 ## 原创：
 - [再谈table组件：固定表头和表列](https://github.com/qiudongwei/blog/issues/7)
