@@ -1,4 +1,7 @@
 # 博客
+
+> “扬枹兮拊鼓，疏缓节兮安歌。”，我是安歌。
+
 ## 原创：
 - [再谈table组件：固定表头和表列](https://github.com/qiudongwei/blog/issues/7)
 - [【Vue进阶】青铜选手，如何自研一套UI库？](https://github.com/qiudongwei/blog/issues/6)
@@ -13,3 +16,8 @@
 - [透过Python反补ES6](https://github.com/qiudongwei/blog/issues/11)
 - [JavaScript函数式编程](https://github.com/qiudongwei/blog/issues/9)
 - [精通JavaScript面试：什么是函数式编程](https://github.com/qiudongwei/blog/issues/8)
+
+## 前瞻JS预案
+
+## MDN翻译
+- [HTML inputmode](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/inputmode)
