@@ -3,6 +3,7 @@
 > “扬枹兮拊鼓，疏缓节兮安歌。”，我是[安歌](https://juejin.im/user/5a96817df265da4e9c635c39/posts)。
 
 ## 原创：
+- [ES6 Class中实现私有属性的几种方法](https://github.com/qiudongwei/blog/issues/15)
 - [再谈table组件：固定表头和表列](https://github.com/qiudongwei/blog/issues/7)
 - [【Vue进阶】青铜选手，如何自研一套UI库？](https://github.com/qiudongwei/blog/issues/6)
 - [【Vue进阶】透过Keep-Alive实现防抖&节流组件](https://github.com/qiudongwei/blog/issues/5)
