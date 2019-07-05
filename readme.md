@@ -19,6 +19,7 @@
 - [精通JavaScript面试：什么是函数式编程](https://github.com/qiudongwei/blog/issues/8)
 
 ## 前瞻JS
+- [TC39提案：可选链运算符](https://github.com/qiudongwei/blog/issues/16)
 - [TC39提案：空值合并](https://github.com/qiudongwei/blog/issues/14)
 
 ## MDN翻译
