@@ -23,5 +23,6 @@
 - [TC39提案：空值合并](https://github.com/qiudongwei/blog/issues/14)
 
 ## MDN翻译
+- [Element: paste event](https://developer.mozilla.org/zh-CN/docs/Web/Events/paste)
 - [Object.fromEntries()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
 - [HTML inputmode](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/inputmode)
