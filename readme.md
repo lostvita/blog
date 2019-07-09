@@ -1,6 +1,6 @@
 # 博客
 
-> “扬枹兮拊鼓，疏缓节兮安歌。”，我是[安歌](https://juejin.im/user/5a96817df265da4e9c635c39/posts)。
+> “扬枹兮拊鼓，疏缓节兮[安歌](https://juejin.im/user/5a96817df265da4e9c635c39/posts)。”
 
 ## 原创：
 - [ES6 Class中实现私有属性的几种方法](https://github.com/qiudongwei/blog/issues/15)
