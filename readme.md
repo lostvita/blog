@@ -23,6 +23,7 @@
 - [TC39提案：空值合并](https://github.com/qiudongwei/blog/issues/14)
 
 ## MDN翻译
+- [DataTransfer.items](https://developer.mozilla.org/zh-CN/docs/Web/API/DataTransfer/items)
 - [DataTransfer.dropEffect](https://developer.mozilla.org/zh-CN/docs/Web/API/DataTransfer/dropEffect)
 - [DataTransferItem.type](https://developer.mozilla.org/zh-CN/docs/Web/API/DataTransferItem/type)
 - [DataTransferItemList.length](https://developer.mozilla.org/zh-CN/docs/Web/API/DataTransferItemList/length)
