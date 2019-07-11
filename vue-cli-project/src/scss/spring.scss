@@ -1,0 +1,40 @@
+$n: 10;
+$c: #63a6c1 #1e3f57;
+$bar-w: 1.25em;
+$bar-h: 5*$bar-w;
+$loader-w: $n*$bar-w;
+
+div {
+	position: absolute;
+	bottom: 50%; left: 50%;
+}
+
+.loader {
+	margin-left: -.5*$loader-w;
+	width: $loader-w; height: $bar-h;
+	perspective: 62.5em;
+	-webkit-box-reflect: below 0 linear-gradient(rgba(#fff, 0), rgba(#fff, .7));
+}
+
+.bar {
+	bottom: 0;
+	width: $bar-w; height: $bar-h;
+	animation: bar 3s cubic-bezier(.81, .04, .4, .7) infinite;
+	
+	@for $i from 0 to $n {
+		$args: append($c, $i*100%/($n - 1));
+		
+		&:nth-child(#{$i + 1}) {
+			margin-left: ($i - .5*$n)*$bar-w;
+			background: mix($args...);
+			animation-delay: $i*50ms;
+		}
+	}
+}
+
+@keyframes bar {
+  0% {
+    transform: rotate(-.5turn) rotateX(-1turn);
+  }
+  75%, 100% { transform: none; }
+}
