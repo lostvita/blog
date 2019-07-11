@@ -4,7 +4,7 @@ function resolve (dir) {
 }
 
 module.exports = {
-    title: "安歌' Blog",
+    title: "安歌's Blog",
     base: '/blog/',
     description: 'Blog Demo',
     head: [
