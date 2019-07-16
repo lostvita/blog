@@ -17,7 +17,8 @@ module.exports = {
             { text: 'Github', link: 'https://github.com/qiudongwei' },
         ],
         sidebar: [
-            ['/views/DataTransfer', 'DataTransfer']
+            ['/views/DataTransfer', 'DataTransfer'],
+            ['/views/MediaRecorder', 'MediaRecorder']
         ]
     },
     markdown: {

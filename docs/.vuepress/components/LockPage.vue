@@ -5,7 +5,7 @@
     <div class="login" v-else>
         <div class="login-box"><input type="text" v-model.trim="tokenIpt" placeholder="输入token" class="login-ctrl" :class="invalid ? 'invalid' : ''"><button class="login-submit" @click="submit">访问</button></div>
         <p v-show="this.invalid" class="invalid-tip">Token Error</p>
-        <p class="login-tips">访问<a class="login-link" :href="article" target="_blank">这里</a>获取token。</p>
+        <p class="login-tips">访问<a class="login-link" :href="articleUrl" :target="articleUrl ? '_blank' : ''">{{ articleText || '这里' }}</a>获取token。</p>
     </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
     name: 'LockPage',
     props: {
         token: String,
-        article: String
+        articleText: String,
+        articleUrl: String
     },
 
     data () {

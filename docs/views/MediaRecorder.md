@@ -1,8 +1,8 @@
-### DataTransfer Demo
+### MediaRecorder Demo
 <hr />
 <ClientOnly>
     <LockPage :token="token" :articleText="article_text" :articleUrl="article_url">
-        <DataTransfer/>
+        <MediaRecorder/>
     </LockPage>
 </ClientOnly>
 
@@ -12,9 +12,9 @@
         name: 'DataTransferMD',
         data () {
             return {
-                token: '1562835370187',
-                article_text: 'JS拖动对象那些事',
-                article_url: 'https://juejin.im/post/5d2d9fbff265da1bb67a4c1f'
+                token: '1563266971025',
+                article_text: '',
+                article_url: ''
             }
         }
     }
