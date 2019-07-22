@@ -18,7 +18,8 @@ module.exports = {
         ],
         sidebar: [
             ['/views/DataTransfer', 'DataTransfer'],
-            ['/views/MediaRecorder', 'MediaRecorder']
+            ['/views/MediaRecorder', 'MediaRecorder'],
+            ['/views/ChineseMap', 'ChineseMap']
         ]
     },
     markdown: {
@@ -31,6 +32,7 @@ module.exports = {
               'vue$': 'vue/dist/vue.esm.js',
               '@': resolve('docs'),
               '@scss': resolve('docs/scss'),
+              '@data': resolve('docs/data'),
               '@assets': resolve('docs/assets')
             }
         }
