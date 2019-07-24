@@ -3,6 +3,7 @@
 > “扬枹兮拊鼓，疏缓节兮[安歌](https://juejin.im/user/5a96817df265da4e9c635c39/posts)。”
 
 ## 原创：
+- [教你在中后台系统玩转ES6](https://github.com/qiudongwei/blog/issues/19)
 - [DataTransfer对象完全手册](https://github.com/qiudongwei/blog/issues/18)
 - [ES6 Class中实现私有属性的几种方法](https://github.com/qiudongwei/blog/issues/15)
 - [再谈table组件：固定表头和表列](https://github.com/qiudongwei/blog/issues/7)
