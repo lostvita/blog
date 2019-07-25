@@ -1,6 +1,6 @@
 .wrapper{
     width: auto;
-    height: auto;
+    min-height: 100vh;
     padding: 20px;
     background-color: #f3f3f4;
 }
@@ -21,4 +21,8 @@
     margin: 0;
     font-size: 16px;
     color: #666666;
+}
+
+.box{
+    padding: 10px;
 }
