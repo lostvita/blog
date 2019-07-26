@@ -5,7 +5,7 @@
             <div class="box">
                 <canvas ref="$circle" class="circle-canvas"></canvas>
                 <div class="circle-recording"><span class="circle-point" :class="canStop ? 'record' : 'stop'"></span><span class="circle-time">{{ time | formatTime }}</span></div>
-                <div class="circle-ctl">
+                <div class="circle-ctrl">
                     <button class="circle-btn circle-record" :disabled="!canRecord" @click="record">Record</button>
                     <button class="circle-btn circle-stop" :disabled="!canStop" @click="stop">Stop</button>
                     <button class="circle-btn circle-download" :disabled="!canDownload" @click="download">Download</button>
@@ -153,11 +153,13 @@ export default {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .circle{
         &-ctrl{
             margin: 10px 0;
             display: flex;
+            width: 100%;
         }
 
         &-btn{
@@ -207,8 +209,10 @@ export default {
 
         &-preview{
             display: flex;
+            width: 100%;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             margin-top: 10px;
             border-top: 1px solid #ebedec;
         }
@@ -227,6 +231,7 @@ export default {
 
         &-recording{
             display: flex;
+            width: 100%;
             justify-content: center;
             align-items: center;
             margin: 5px 0;
