@@ -19,7 +19,8 @@ module.exports = {
         sidebar: [
             ['/views/DataTransfer', 'DataTransfer'],
             ['/views/MediaRecorder', 'MediaRecorder'],
-            ['/views/ChineseMap', 'ChineseMap']
+            ['/views/ChineseMap', 'ChineseMap'],
+            ['/views/FreeFalling', 'FreeFalling']
         ]
     },
     markdown: {

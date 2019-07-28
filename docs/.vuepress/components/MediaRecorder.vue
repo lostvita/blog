@@ -59,14 +59,14 @@ export default {
 
             this.createVideo($circle)
 
-            this.tTimer = new Timer(null, 1000) // 计时器
+            this.tTimer = new Timer(1000) // 计时器
             this.tTimer.onFinished = () => {
                 if(this.canStop){
                     this.time++
                     this.tTimer.start()
                 }
             }
-            const cTimer = new Timer(null, 5000)
+            const cTimer = new Timer(5000)
             let color = this.color[parseInt(Math.random() * 6)]
             cTimer.onProgress = (p) => {
                 const x = Math.cos(p * 2 * Math.PI) * 50 + 300
@@ -149,12 +149,6 @@ export default {
 
 
 <style lang="scss" scoped>
-    .box{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
     .circle{
         &-ctrl{
             margin: 10px 0;

@@ -24,5 +24,9 @@
 }
 
 .box{
+    display: flex;
     padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
