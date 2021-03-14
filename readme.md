@@ -20,7 +20,7 @@
 - [手把手带你撸后台系统（架构篇](https://github.com/qiudongwei/blog/issues/23)
 
 ### css技巧
-- [outline只画一边？]()
+- [outline只画一边？](https://github.com/qiudongwei/blog/issues/25)
 - [css画一个色盘和连续色块]()
 
 ### 前端工程
