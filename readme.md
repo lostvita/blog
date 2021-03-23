@@ -3,7 +3,7 @@
 寒塘渡鹤影，冷月葬花魂。
 
 ### Js
-- [密集数组和稀疏数组]()
+- [JavaScript的稀疏和密集数组](https://github.com/qiudongwei/blog/issues/27)
 - [给Canvas录制一个视频](https://github.com/qiudongwei/blog/issues/22)
 - [教你在中后台系统玩转ES6](https://github.com/qiudongwei/blog/issues/19)
 - [DataTransfer对象那些事](https://github.com/qiudongwei/blog/issues/18)
