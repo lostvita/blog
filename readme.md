@@ -3,6 +3,7 @@
 寒塘渡鹤影，冷月葬花魂。
 
 ### Js
+- [正则断言太好用了叭](https://github.com/qiudongwei/blog/issues/28)
 - [如何统计首屏渲染时间]()
 - [JavaScript的稀疏和密集数组](https://github.com/qiudongwei/blog/issues/27)
 - [给Canvas录制一个视频](https://github.com/qiudongwei/blog/issues/22)
