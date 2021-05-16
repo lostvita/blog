@@ -23,6 +23,7 @@
 - [手把手带你撸后台系统（架构篇](https://github.com/qiudongwei/blog/issues/23)
 
 ### css技巧
+- [纯css画一个响应式的正方形](https://github.com/qiudongwei/blog/issues/29)
 - [outline只画一边？](https://github.com/qiudongwei/blog/issues/25)
 - [css画一个色盘和连续色块]()
 
