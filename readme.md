@@ -30,6 +30,7 @@
 - [css画一个色盘和连续色块]()
 
 ### 前端工程
+- [记录package-lock.json错误的debugger过程](https://github.com/qiudongwei/blog/issues/31)
 - [基于GitLab-Runner打造锋利的CI/CD](https://github.com/qiudongwei/blog/issues/2)
 
 ### 翻译
