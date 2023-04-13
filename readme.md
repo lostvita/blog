@@ -3,6 +3,7 @@
 寒塘渡鹤影，冷月葬花魂。
 
 ### Js
+- [File chooser dialog can only be shown with a user activation](https://github.com/lostvita/blog/issues/32)
 - [邻接矩阵应用实践]()
 - [数据库视图在前端应用中的实践思考]()
 - [正则断言太好用了叭](https://github.com/qiudongwei/blog/issues/28)
